@@ -12,27 +12,28 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: actions/checkout@v2
-      name: Checkout code
+      - uses: actions/checkout@v2
+        name: Checkout code
 
-    - name: Set up Python
-      uses: actions/setup-python@v2
-      with:
-        python-version: '3.x'
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
 
-    - name: Install Dependencies
-      run: |
-        python -m pip install --upgrade pip
-        pip install pyinstaller
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install pyinstaller
 
-    - name: Compile with PyInstaller
-      run: pyinstaller --onefile ChedLog.py # Make sure to replace ChedLog.py with your actual script name
+      - name: Compile with PyInstaller
+        run: pyinstaller --onefile ChedLog.py # Make sure to replace ChedLog.py with your actual script name
 
-    - name: Create Release and Upload EXE
-      uses: softprops/action-gh-release@v1
-      with:
-        draft: false
-        prerelease: false
-        files: dist/ChedLog.exe  # Make sure this matches the name of the output file from PyInstaller
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Create Release and Upload EXE
+        if: startsWith(github.ref, 'refs/tags/')
+        uses: softprops/action-gh-release@v1
+        with:
+          draft: false
+          prerelease: false
+          files: dist/ChedLog.exe  # Ensure this matches the PyInstaller output
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
