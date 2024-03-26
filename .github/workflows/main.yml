@@ -4,9 +4,9 @@ on:
   push:
     branches:
       - main
-  create:
     tags:
       - 'v*'
+
 jobs:
   build-and-release:
     runs-on: windows-latest
@@ -26,20 +26,13 @@ jobs:
         pip install pyinstaller
 
     - name: Compile with PyInstaller
-      run: pyinstaller --ChedLog.py
+      run: pyinstaller --onefile ChedLog.py # Make sure to replace ChedLog.py with your actual script name
 
-    - name: Create Release
-      id: create_release
+    - name: Create Release and Upload EXE
       uses: softprops/action-gh-release@v1
       with:
         draft: false
         prerelease: false
-        files: dist/ChedLog.exe
+        files: dist/ChedLog.exe  # Make sure this matches the name of the output file from PyInstaller
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Upload EXE to Release
-      uses: actions/upload-artifact@v2
-      with:
-        name: Executable
-        path: dist/*.exe
