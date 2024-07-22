@@ -1,7 +1,13 @@
 # ChedLog
 
-## This was primarily designed because I am lazy and don't want to have to open Discord on the website to get my token every time.
+## Unleash the Power of Your Discord Tokens
 
-Grabs your discord token from local discord clients and browsers and pastes it into the console, cba making it so it displays the name of the account. If you want to send me a fix or PR and fix it, be my guest!
+Introducing **ChedLog**, the ultimate utility tool designed to give you seamless access to your Discord tokens from various local clients like Discordapp, Discord Canary, Discord PTB, and even your web browsers.
 
-### This is not a token logger, don't believe me? Don't use it. It is literally open source lmao.
+### Why ChedLog?
+
+- **Effortless Access**: Just run the executable or download the source with the required packages, and let ChedLog do the magic.
+- **Instant Token Display**: Instantly see all your logged-in tokens, complete with usernames if they're valid.
+- **Quick Copy**: Easily copy any token to your clipboard by specifying the number next to it.
+
+No more hassle, no more digging through files. With ChedLog, your Discord tokens are just a click away. Get ready to experience Discord like never before!
