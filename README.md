@@ -10,4 +10,4 @@ Introducing **ChedLog**, the ultimate utility tool designed to give you seamless
 - **Instant Token Display**: Instantly see all your logged-in tokens, complete with usernames if they're valid.
 - **Quick Copy**: Easily copy any token to your clipboard by specifying the number next to it.
 
-No more hassle, no more digging through files, or Browser Tools. With ChedLog, your Discord tokens are just a click away. Get ready to experience Discord like never before!
+No more hassle, no more digging through files, or Browser Tools. With ChedLog, your Discord tokens are just a few clicks away. Get ready to experience Discord like never before!
