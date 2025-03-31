@@ -26,7 +26,7 @@ ASCII_ART = r'''
 
 print(Fore.RED + ASCII_ART)
 print(Fore.WHITE + "=" * 40)
-print(Fore.CYAN + "Made by Cheddlar" + Fore.WHITE + " || " + Fore.MAGENTA + "Version: 1.4.5")
+print(Fore.CYAN + "Made by Cheddlar" + Fore.WHITE + " || " + Fore.MAGENTA + "Version: 1.5")
 print("\n" + Fore.YELLOW + "Initializing token scanner...\n")
 
 def fetch_tokens_and_usernames():
