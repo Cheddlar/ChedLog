@@ -2,7 +2,7 @@
 
 ## Unleash the Power of Your Discord Tokens
 
-Introducing **ChedLog**, the ultimate utility tool designed to give you seamless access to your Discord tokens from various local clients like Discordapp, Discord Canary, Discord PTB, and even your web browsers.
+Introducing **ChedLog**, the ultimate utility tool designed to provide seamless access to your Discord tokens from various local clients, including **Discordapp**, **Discord Canary**, **Discord PTB**, and even your **web browsers**. Additionally, most custom or modded clients should also be accessible. If any clients are missing, feel free to make a pull request or send the client name, and it will be reviewed.
 
 ### Why ChedLog?
 
