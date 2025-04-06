@@ -11,3 +11,5 @@ Introducing **ChedLog**, the ultimate utility tool designed to give you seamless
 - **Quick Copy**: Easily copy any token to your clipboard by specifying the number next to it.
 
 No more hassle, no more digging through files, or Browser Tools. With ChedLog, your Discord tokens are just a few clicks away. Get ready to experience Discord like never before!
+
+Side note, For future reference, if you're going to paste my code into another project, please at least credit me as the person you got it from, i've now seen a few reskinned versions of this online with no credit at all :)
